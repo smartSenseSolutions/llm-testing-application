@@ -1,0 +1,17 @@
+import { Meta, Title, IconGallery, IconItem } from '@storybook/blocks';
+import { ThemeProvider } from '@mui/material';
+import theme from '../theme';
+import Icons from '../icons';
+
+<Meta title="Iconography" />
+
+# Iconography
+
+<ThemeProvider theme={theme}>
+    <IconGallery>
+        {Object.keys(Icons).map((item) => {
+            const SmallIcon = Icons[item];
+            return <IconItem name={item}>{<SmallIcon />}</IconItem>;
+        })}
+    </IconGallery>
+</ThemeProvider>

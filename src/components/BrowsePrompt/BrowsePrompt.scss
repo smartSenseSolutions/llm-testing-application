@@ -1,0 +1,45 @@
+@import '@patent-app/styles/abstracts/abstracts';
+
+.prompt-main {
+    height: calc(100vh - 250px);
+    overflow: auto;
+
+    .prompt-section {
+        border: 1px solid $secondary10;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        padding: 3rem;
+
+        &:hover {
+            border: 1px solid $secondary;
+        }
+
+        h2 {
+            color: $secondary;
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .use-text {
+            border: 1px solid $black10;
+            background: $white;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .copy-icon {
+            background: $secondary10;
+            text-align: center;
+            border-radius: 0.5rem;
+            padding: 5px 7px;
+        }
+
+        p {
+            color: $secondary;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+        }
+    }
+}

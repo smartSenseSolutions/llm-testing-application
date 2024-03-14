@@ -1,0 +1,1 @@
+export { FigureCard } from './FigureCard.component'

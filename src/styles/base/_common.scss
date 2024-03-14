@@ -1,0 +1,100 @@
+//Add style which we want to override globally
+
+.card-header {
+    border: 1px solid $secondary10;
+    align-items: center;
+    border-bottom: 0;
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 1.4rem;
+    height: 60px;
+
+    .figure-icon {
+        background: rgb(117 63 234 / 10%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        height: 24px;
+        width: 24px;
+    }
+
+    .MuiSelect-select {
+        padding: 6px 14px;
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .tag {
+        border-radius: 0.4rem;
+        background: rgba(117, 63, 234, 0.1);
+        color: $secondary;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.draft-grid-rows {
+    grid-template-rows: repeat(2, calc(100vh - 200px));
+
+    form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rdw-editor-wrapper {
+        flex-grow: 1;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.textAreaWithClear {
+    .MuiInputBase-multiline {
+        padding: 16.5px 14px 43px;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        border-color: $secondary10;
+    }
+}
+
+.richTextAreaActionButton {
+    &.MuiIconButton-root {
+        svg {
+            path {
+                fill: $secondary;
+            }
+        }
+    }
+
+    &.Mui-disabled {
+        svg {
+            path {
+                fill: $secondary40;
+            }
+        }
+    }
+}
+
+.backgroundIconButton.MuiIconButton-root.MuiButtonBase-root {
+    background-color: $secondary10;
+    height: 32px;
+    width: 32px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $secondary10;
+    }
+
+    &.Mui-disabled {
+        background-color: rgba($secondary10, 0.4);
+    }
+}
